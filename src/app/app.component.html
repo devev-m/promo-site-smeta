@@ -1,27 +1,35 @@
 <header class="header">
-  <div class="header__wrapper container">
-    <div class="header__inner">
-      <img src="./images/logo.png" alt="logo" class="header__logo">
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="#" class="header__link">Главная</a>
-          </li>
-          <li class="header__item">
-            <a href="#" class="header__link">Продукты</a>
-          </li>
-          <li class="header__item">
-            <a href="#" class="header__link">Данные</a>
-          </li>
-          <li class="header__item">
-            <a href="#" class="header__link">Цены</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__buttons">
-      <a href="#" class="header__buttons-login">Логин</a>
-      <a href="#" class="header__buttons-registration">Регистрация</a>
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__inner">
+        <a class="header__logo-link">
+          <img src="../assets/images/logo.svg" alt="logo" class="header__logo-img">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Главная</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Продукты
+                <img src="../assets/images/chevron-down.svg" alt="chd">
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Данные
+                <img src="../assets/images/chevron-down.svg" alt="chd">
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Цены</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__buttons">
+        <a href="#" class="header__buttons-login">Логин</a>
+        <a href="#form" class="header__buttons-registration">Регистрация</a>
+      </div>
     </div>
   </div>
 </header>
@@ -29,14 +37,18 @@
   <section class="innovation">
     <div class="container">
       <p class="innovation__info">Простой способ заработать на сметах</p>
-      <h1 class="innovation__title">Инновационное составления смет</h1>
+      <h1 class="innovation__title">Инновационное составление смет</h1>
       <p class="innovation__subtitle">Работайте меньше, получайте больше</p>
       <div class="innovation__buttons">
-        <button class="innovation__buttons-video">Демонстрация работы</button>
-        <button class="innovation__buttons-registration">Регистрация</button>
+        <a class="innovation__buttons-video"><img src="../assets/images/play-circle.svg" alt="icon-play"
+            class="innovation__buttons-video-image">
+          Демонстрация работы</a>
+        <a href="#form" class="innovation__buttons-registration">Регистрация</a>
       </div>
+      <img src="../assets/images/ball.png" alt="header-ball" class="innovation__image-ball">
     </div>
   </section>
+
   <section class="prices container">
     <h3 class="prices__subtitle">Тарифы</h3>
     <h2 class="prices__title">Тарифы помогут сэкономить</h2>
@@ -105,38 +117,93 @@
       </div>
     </div>
   </section>
+
   <section class="try">
     <div class="container">
       <div class="try__wrapper">
         <div class="try__info">
           <h2 class="try__info-title">Попробуйте Сметный офис</h2>
           <p class="try__info-subtitle">Присоединяйтесь к сообществу сметчиков, нас уже более 5000+ человек</p>
-          <button class="try__info-button try__info-button_1">Подробнее</button>
-          <button class="try__info-button try__info-button_2">Начать использовать Сметный офис</button>
+          <div class="try__info-buttons">
+            <button class="try__info-button try__info-button_1">Подробнее</button>
+            <button class="try__info-button try__info-button_2">Начать использовать Сметный офис</button>
+          </div>
+          <img src="../assets/images/ball-center.png" alt="ball-center" class="try__info-ball">
         </div>
-        <div class="try__image"> 
-          <img src="#" alt="smile-image" class="try__image-img">
-        </div>
+        <img src="../assets/images/image-center.png" alt="smile-image" class="try__image">
       </div>
     </div>
   </section>
-  <section class="feedback container">
-    <img src="#" alt="sisyphys-logo" class="feedback__logo">
-    <h2 class="feedback__title">Когда пришлось делать сразу 10 смет, я не думала что успею, но Сметный офис мне помог в этом</h2>
-    <img src="#" alt="author-foto" class="feedback__image">
-    <h3 class="feedback__person">Симона Ли</h3>
-    <p class="feedback__text">Главный инженер Global Trust Investment</p>
+
+  <section class="feedback">
+    <div class="container">
+      <img src="../assets/images/sisyphus-logo.svg" alt="sisyphys-logo" class="feedback__logo">
+      <h2 class="feedback__title">Когда пришлось делать сразу 10 смет, я не думала что успею, но Сметный офис мне помог в этом</h2>
+      <img src="../assets/images/avatar.png" alt="author-foto" class="feedback__image">
+      <h3 class="feedback__person">Симона Ли</h3>
+      <p class="feedback__text">Главный инженер Global Trust Investment</p>
+    </div>
   </section>
-  <section class="registration">
+    
+  <section id="form" class="registration">
     <div class="container">
       <h2 class="registration__title">Быстрая регистрация в Сметном офисе</h2>
       <p class="registration__text">Начните работу прямо сейчас</p>
-      <form id="form" action="#" class="registration__form">
+      <form action="#" class="registration__form">
         <input type="text" class="registration__form-input registration__form-input-name" placeholder="Ваше имя">
         <input type="mail" class="registration__form-input registration__form-mail" placeholder="Почта">
         <p class="registration__form-input-text">Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных</p>
-        <button class="registration__form-button">Зарегистрироваться</button>
+        <button class="registration__form-button" type="submit">Зарегистрироваться</button>
       </form>
+      <img src="../assets/images/ball-footer.png" alt="" class="registration__img">
     </div>
   </section>
 </main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__main-column">
+        <h3 class="footer__main-column-title">Возможности</h3>
+        <ul class="footer__main-column-list">
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Обзор продукта</a></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Возможности</a></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Отличия от
+              программ</a><span>New</span></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Параметры</a></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Информация об обновлениях</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__main-column">
+        <h3 class="footer__main-column-title">Помощь</h3>
+        <ul class="footer__main-column-list">
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Быстрый старт</a></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Справка</a></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Обучающие материалы</a></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Платные курсы</a></li>
+        </ul>
+      </div>
+      <div class="footer__main-column">
+        <h3 class="footer__main-column-title">Тарифы</h3>
+        <ul class="footer__main-column-list">
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Тарифы</a></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Описания</a></li>
+        </ul>
+      </div>
+      <div class="footer__main-column">
+        <h3 class="footer__main-column-title">Правовая информация</h3>
+        <ul class="footer__main-column-list">
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Условия работы</a></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Приватность</a></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Cookies</a></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Лицензирование</a></li>
+          <li class="footer__main-column-item"><a href="" class="footer__main-column-link">Обратная связь</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__down">
+      <img src="../assets/images/logo.svg" alt="logo" class="footer__down-logo">
+      <p class="footer__down-text">© 2023 Все права защищены. Сметный офис</p>
+    </div>
+  </div>
+</footer>
