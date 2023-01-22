@@ -1,4 +1,5 @@
-<header class="header">
+<app-header></app-header>
+<!-- <header class="header">
   <div class="container">
     <div class="header__wrapper">
       <div class="header__inner">
@@ -32,7 +33,7 @@
       </div>
     </div>
   </div>
-</header>
+</header> -->
 <main class="main">
   <section class="innovation">
     <div class="container">
@@ -63,7 +64,8 @@
           <h4 class="prices__card-price">1 100 ₽</h4>
           <span class="prices__card-price-span">1 день</span>
           <p class="prices__card-info">Программа с ТСН МГЭ на 1 день</p>
-          <button class="prices__card-button prices__card-button_1">Приобрести тариф</button>
+          <ui-button [text]="'Приобрести тариф'" [backgroundColor]="'#1719DD'" class="prices__card-button prices__card-button_1"></ui-button>
+          <!-- <ui-button [text]="'Подробнее'" [marginTop]="'12px'" (buttonClick)="test()" class="prices__card-button prices__card-button_2"></ui-button> -->
           <button class="prices__card-button prices__card-button_2">Подробнее</button>
         </div>
         <div class="prices__card-footer">
@@ -149,9 +151,9 @@
     <div class="container">
       <h2 class="registration__title">Быстрая регистрация в Сметном офисе</h2>
       <p class="registration__text">Начните работу прямо сейчас</p>
-      <form action="#" class="registration__form">
-        <input type="text" class="registration__form-input registration__form-input-name" placeholder="Ваше имя">
-        <input type="mail" class="registration__form-input registration__form-mail" placeholder="Почта">
+      <form action="#" method="post" class="registration__form">
+        <input type="text" class="registration__form-input registration__form-input-name" placeholder="Ваше имя" required>
+        <input type="mail" class="registration__form-input registration__form-input-mail" placeholder="Почта" required>
         <p class="registration__form-input-text">Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных</p>
         <button class="registration__form-button" type="submit">Зарегистрироваться</button>
       </form>
@@ -159,7 +161,8 @@
     </div>
   </section>
 </main>
-<footer class="footer">
+<app-footer></app-footer>
+<!-- <footer class="footer">
   <div class="container">
     <div class="footer__main">
       <div class="footer__main-column">
@@ -206,4 +209,4 @@
       <p class="footer__down-text">© 2023 Все права защищены. Сметный офис</p>
     </div>
   </div>
-</footer>
+</footer> -->
