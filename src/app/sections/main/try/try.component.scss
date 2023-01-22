@@ -1,0 +1,117 @@
+.try{
+   &__wrapper{
+      border-radius: 24px;
+      overflow: hidden;
+      position: relative;
+   }
+   &__info{
+      height: 400px;
+      background: #5654DB;
+      padding: 94px 64px;
+      position: relative;
+      &-title{
+         font-size: 36px;
+         font-weight: 600;
+         line-height: 44px;
+      }
+      &-subtitle{
+         font-size: 20px;
+         font-weight: 400;
+         line-height: 30px;
+         color: #E9D7FE;
+         margin: 20px 0 40px;
+         max-width: 600px;
+      }
+      &-button{
+         font-size: 16px;
+         padding: 12px 20px;
+         font-weight: 600;
+         line-height: 24px;
+         border-radius: 8px;
+         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+         position: relative;
+         z-index: 2;
+         &_1{
+            margin: 0px 12px 0px 0px;
+            background: #fff;
+            border: 1px solid #D0D5DD;
+            color: #344054;
+            &:hover{
+               background: #344054;
+               color: #fff;
+               border: 1px solid #344054;
+            }
+         }
+         &_2{
+            background: #1719DD;
+            &:hover{
+               background: #fff; 
+               color: #1719DD; 
+               border: 1px solid #fff;
+            }
+         }
+      }
+      &-ball{
+         position: absolute;
+         left: 0px;
+         top: 0px;
+         mix-blend-mode: color-dodge;
+      }
+   }
+   &__image{
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+}
+@media (max-width: 1200px) {
+   .try{
+      &__info{
+         padding: 94px 25px;
+         &-subtitle{
+            max-width: 400px;
+         }
+      }
+   }
+}
+@media (max-width: 1000px) {
+   .try{
+      &__image{
+         display: none;
+      }
+      &__info{
+         width: 100%;
+         text-align: center;
+         &-subtitle{
+            max-width: 100%;
+         }
+      }
+   }
+}
+@media (max-width: 767px) {
+   .try{
+      &__info{
+         height: 100%;
+         padding: 30px;
+         &-title{
+            font-size: 30px;
+         }
+         &-ball{
+            display: none;
+         }
+         &-button{
+            margin-bottom: 15px;
+         }
+      }
+   }
+}
+@media (max-width: 480px) {
+   .try{
+      &__info{
+         &-button{
+            padding: 8px 10px;
+            width: 100%;
+         }
+      }
+   }
+}
