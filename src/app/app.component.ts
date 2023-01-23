@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'promo-site-smeta';
-  test(){
-    console.log('Test');
+  // test(){
+  //   console.log('Test');
+  // }
+
+  submit(){
+    console.log('Submit Test');
   }
 }

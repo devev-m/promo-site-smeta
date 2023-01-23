@@ -1,0 +1,7 @@
+<form [formGroup]="form" (submit)="submit()" action="#" method="post" class="registration__form">
+   <input type="text" class="registration__form-input registration__form-input-name" placeholder="Ваше имя" required>
+   <input formControlName="email" type="mail" class="registration__form-input registration__form-input-mail" placeholder="Почта" required>
+   <small *ngIf="form.get('email')?.hasError('email')">Некорректный email</small>
+   <p class="registration__form-input-text">Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных</p>
+   <button (submit)="submit()" class="registration__form-button" type="submit" [disabled]="form.invalid">Зарегистрироваться</button>
+</form>
