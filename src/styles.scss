@@ -52,56 +52,60 @@ body {
    max-width: 1246px;
    padding: 0 15px;
 }
-// // ========= Section Header =========
-// .header {
-//    background-color: #5654DB;
-//    &__wrapper {
-//       font-size: 16px;
-//       line-height: 24px;
+
+// ========= Section Registration =========
+// .registration{
+//    text-align: center;
+//    background: #5654DB;
+//    padding: 96px 0;
+//    position: relative;
+//    overflow: hidden;
+//    &__title{
+//       font-size: 36px;
+//       line-height: 44px;
 //       font-weight: 600;
-//       min-height: 80px;
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
 //    }
-//    &__inner {
-//       display: flex;
+//    &__text{
+//       font-size: 20px;
+//       line-height: 30px;
+//       color: #E9D7FE;
+//       padding: 20px 0 32px;
 //    }
-//    &__logo{
-//       &-link{
-//          display: flex;
-//          align-items: center;
-//       }
-//       &-img{
-//          margin: 0px 40px 0px 0px;
-//       }
-//    }
-//    &__list {
-//       display: flex;
-//    }
-//    &__item{
-//       margin: 0px 32px 0px 0px;
-//       img{
-//          margin-left: 8px;
-//          padding-bottom: 1px;
-//       }
-//    }
-//    li a:hover {
-//       border-bottom: 1px solid #fff;
-//    }
-//    &__buttons{
-//       &-login{
-//          &:hover{
-//             border-bottom: 1px solid #fff;
-//          }
-//       }
-//       &-registration{
-//          padding: 10px 18px;
-//          background: #1719DD;
-//          border: 1px solid #1719DD;
+//    &__form{
+//       width: 360px;
+//       margin: 0 auto;
+//       position: relative;
+//       z-index: 1;
+//       &-input{
+//          width: 100%;
+//          height: 48px;
+//          background: #fff;
+//          border: 1px solid #fff;
 //          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 //          border-radius: 8px;
-//          margin: 0px 0px 0px 30px;
+//          padding-left: 14px;
+//          font-size: 16px;
+//          line-height: 24px;
+//          &-name{
+//             margin-bottom: 32px;
+//          }
+//          &-text{
+//             line-height: 20px;
+//             color: #E9D7FE;
+//             padding: 6px 0 16px;
+//             text-align: left;
+//          }
+//       }
+//       &-button{
+//          font-size: 16px;
+//          font-weight: 600;
+//          line-height: 24px;
+//          width: 100%;
+//          height: 48px;
+//          background: #1513AD;
+//          border: 1px solid #1513AD;
+//          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+//          border-radius: 8px;
 //          &:hover{
 //             background-color: #fff;
 //             color: #1719DD;
@@ -109,632 +113,19 @@ body {
 //          }
 //       }
 //    }
-// }
-// ========= Section Innovation =========
-.innovation {
-   background-color: #5654DB;
-   text-align: center;
-   padding: 102px 0px 192px 0px;
-   font-weight: 600;
-   position: relative;
-   overflow: hidden;
-   &__info{
-      color: #E9D7FE;
-      font-size: 16px;
-      padding: 0px 0px 12px 0px;
-   }
-   &__title{
-      font-size: 72px;
-      line-height: 90px;
-      max-width: 770px;
-      margin: 0 auto 20px;
-   }
-   &__subtitle{
-      font-size: 20px;
-      line-height: 30px;
-      font-weight: 400;
-      color: #E9D7FE;
-      margin: 0px 0px 48px 0px;
-   }
-   &__buttons{
-      line-height: 28px;
-      font-size: 18px;
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      position: relative;
-      z-index: 2;
-      &-video{
-         color: #344054;
-         padding: 16px 28px 16px 64px;
-         background: #fff;
-         border: 1px solid #D0D5DD;
-         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-         border-radius: 8px;
-         position: relative;
-         &-image{
-            position: absolute;
-            top: 18px;
-            left: 30px;
-         }
-         &:hover{
-            background: #E9D7FE;
-         }
-      }
-      &-registration{
-         padding: 16px 28px;
-         background: #1513AD;
-         border: 1px solid #1513AD;
-         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-         border-radius: 8px;
-         &:hover{
-            background-color: #fff;
-            color: #1719DD;
-            border: 1px solid #fff;
-         }
-      }
-   }
-   &__image{
-      &-ball{
-         position: absolute;
-         left: 0;
-         right: 0;
-         top: 0;
-         margin: auto;
-         mix-blend-mode: color-dodge;
-      }
-   }
-}
-@media (max-width: 970px) {
-   .header{
-      &__wrapper{
-         flex-wrap: wrap;
-         justify-content: center;
-         padding-top: 15px;
-         gap: 10px;
-         min-height: 110px;
-      }
-   }
-   .innovation{
-      padding-bottom: 60px;
-   }
-}
-@media (max-width: 767px) {
-   .header{
-      &__logo-img {
-         margin: 0 10px 10px 10px;
-      }
-      &__nav{
-         margin: 10px 0;
-      }
-      &__wrapper{
-         min-height: 130px;
-      }
-      &__inner{
-         flex-wrap: wrap;
-         justify-content: center;
-      }
-      &__buttons{
-         &-registration{
-            padding: 5px 15px;
-         }
-      }
-   }
-   .innovation{
-      padding: 60px 0;
-      &__title{
-         font-size: 50px;
-         line-height: 50px;
-      }
-      &__buttons{
-         flex-wrap: wrap;
-      }
-   }
-}
-@media (max-width: 480px) {
-   .header{
-      &__list{
-         flex-wrap: wrap;
-         justify-content: center;
-         gap: 10px;
-      }
-      &__item{
-         font-size: 16px;
-         margin-right: 15px;
-      }
-      &__buttons{
-         font-size: 12px;
-      }
-   }
-   .innovation{
-      padding: 35px 0;
-      &__info{
-         font-size: 14px;
-      }
-      &__title{
-         font-size: 36px;
-      }
-      &__subtitle{
-         font-size: 14px;
-      }
-      &__image-ball{
-         display: none;
-      }
-      &__buttons{
-         &-video{
-            padding: 10px 10px 10px 40px;
-            &-image {
-               top: 12px;
-               left: 8px;
-            }
-         }
-         &-registration{
-            padding: 10px 20px;
-         }
-      }
-   }
-}
-// ========= Section Prices =========
-.prices{
-   color: #101828;
-   font-size: 16px;
-   font-weight: 600;
-   &__subtitle{
-      line-height: 24px;
-      color: #4E4D9D;
-      padding: 31px 0 12px;
-      text-align: center;
-   }
-   &__title{
-      font-size: 36px;
-      line-height: 44px;
-      padding: 0px 0px 20px 0px;
-      text-align: center;
-   }
-   &__info{
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 30px;
-      color: #475467;
-      padding: 0px 0px 88px 0px;
-      text-align: center;
-   }
-   &__cards{
-      display: flex;
-      justify-content: space-between;
-      padding: 0px 0px 118px 0px;
-   }
-   &__card{
-      width: 384px;
-      height: 590px;
-      border: 1px solid #EAECF0;
-      box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
-      border-radius: 16px;
-      &-header{
-         padding: 32px;
-         border-bottom: 1px solid #EAECF0;
-      }
-      &-title{
-         font-size: 18px;
-         line-height: 28px;
-         color: #475467;
-         padding: 0px 60px 0px 0px;
-         &-wrapper{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-         }
-         &-span{
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 20px;
-            color: #5654DB;
-            background: #F9F5FF;
-            border-radius: 16px;
-            padding: 4px 12px;
-         }
-      }
-      &-price{
-         display: inline-block;
-         font-size: 60px;
-         line-height: 72px;
-         margin: 0px 4px 0px 0px;
-         &-span{
-            font-weight: 500;
-            line-height: 24px;
-            color: #475467;
-         }
-      }
-      &-info{
-         font-weight: 400;
-         line-height: 24px;
-         color: #475467;
-         padding: 16px 0 32px;
-      }
-      &-button{
-         line-height: 24px;
-         width: 100%;
-         padding: 12px 0;
-         border-radius: 8px;
-         &:hover{
-            opacity: .7;
-         }
-         &_1{
-            color: #fff;
-            background: #1719DD;
-         }
-         &_2{
-            color: #344054;
-            background: #fff;
-            border: 1px solid #D0D5DD;
-            margin: 12px 0 0;
-         }
-      }
-      &-footer{
-         padding: 32px 32px 40px;
-         &-title{
-            margin: 0px 0px 24px 0px;
-            line-height: 24px;
-            text-transform: uppercase;
-         }
-         &-list{
-            font-family: $font-roboto;
-            font-size: 14px;
-            line-height: 26px;
-            font-weight: 700;
-            color: #000000;
-            padding: 0px 0px 0px 34px;
-            span{
-               font-style: italic;
-               font-weight: 400;
-            }
-         }
-         &-item{
-            position: relative;
-            &:not(:last-child){
-               margin: 0px 0px 16px 0px;
-            }
-            &:before{
-               content: '';
-               position: absolute;
-               left: -34px;
-               top: 2px;
-               background: url('./assets/images/check-icon.svg') no-repeat;
-               background-size: 20px;
-               width: 20px;
-               height: 20px;
-            }
-         } 
-      }
-   }
-}
-@media (max-width: 1035px) {
-   .prices{
-      &__info{
-         padding-bottom: 50px;
-      }
-      &__cards{
-         flex-wrap: wrap;
-         justify-content: center;
-         gap: 25px;
-         padding-bottom: 70px;
-      }
-   }
-}
-@media (max-width: 390px) {
-   .prices{
-      &__info{
-         padding-bottom: 30px;
-      }
-      &__card{
-         width: 320px;
-         &-price{
-            font-size: 40px;
-         }
-         &-footer{
-            padding: 20px;
-            &-list{
-               line-height: 20px;
-            }
-         }
-      }
-   }
-}
-// ========= Section Try =========
-.try{
-   &__wrapper{
-      border-radius: 24px;
-      overflow: hidden;
-      position: relative;
-   }
-   &__info{
-      height: 400px;
-      background: #5654DB;
-      padding: 94px 64px;
-      position: relative;
-      &-title{
-         font-size: 36px;
-         font-weight: 600;
-         line-height: 44px;
-      }
-      &-subtitle{
-         font-size: 20px;
-         font-weight: 400;
-         line-height: 30px;
-         color: #E9D7FE;
-         margin: 20px 0 40px;
-         max-width: 600px;
-      }
-      &-button{
-         font-size: 16px;
-         padding: 12px 20px;
-         font-weight: 600;
-         line-height: 24px;
-         border-radius: 8px;
-         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-         position: relative;
-         z-index: 2;
-         &_1{
-            margin: 0px 12px 0px 0px;
-            background: #fff;
-            border: 1px solid #D0D5DD;
-            color: #344054;
-            &:hover{
-               background: #344054;
-               color: #fff;
-               border: 1px solid #344054;
-            }
-         }
-         &_2{
-            background: #1719DD;
-            &:hover{
-               background: #fff; 
-               color: #1719DD; 
-               border: 1px solid #fff;
-            }
-         }
-      }
-      &-ball{
-         position: absolute;
-         left: 0px;
-         top: 0px;
-         mix-blend-mode: color-dodge;
-      }
-   }
-   &__image{
-      position: absolute;
-      right: 0;
-      top: 0;
-   }
-}
-@media (max-width: 1200px) {
-   .try{
-      &__info{
-         padding: 94px 25px;
-         &-subtitle{
-            max-width: 400px;
-         }
-      }
-   }
-}
-@media (max-width: 1000px) {
-   .try{
-      &__image{
-         display: none;
-      }
-      &__info{
-         width: 100%;
-         text-align: center;
-         &-subtitle{
-            max-width: 100%;
-         }
-      }
-   }
-}
-@media (max-width: 767px) {
-   .try{
-      &__info{
-         height: 100%;
-         padding: 30px;
-         &-title{
-            font-size: 30px;
-         }
-         &-ball{
-            display: none;
-         }
-         &-button{
-            margin-bottom: 15px;
-         }
-      }
-   }
-}
-@media (max-width: 480px) {
-   .try{
-      &__info{
-         &-button{
-            padding: 8px 10px;
-            width: 100%;
-         }
-      }
-   }
-}
-// ========= Section Feedback =========
-.feedback{
-   text-align: center;
-   padding: 96px 0;
-   color: #101828;
-   &__title{
-      font-size: 47px;
-      font-weight: 500;
-      line-height: 60px;
-      padding: 32px 0;
-   }
-   &__person{
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 28px;
-      padding: 16px 0 4px;
-   }
-   &__text{
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      color: #475467;
-   }
-}
-@media (max-width: 767px) {
-   .feedback{
-      padding: 60px 0;
-      &__title {
-         font-size: 30px;
-         line-height: 40px;
-         padding: 20px 0;
-      }
-   }
-}
-// ========= Section Registration =========
-.registration{
-   text-align: center;
-   background: #5654DB;
-   padding: 96px 0;
-   position: relative;
-   overflow: hidden;
-   &__title{
-      font-size: 36px;
-      line-height: 44px;
-      font-weight: 600;
-   }
-   &__text{
-      font-size: 20px;
-      line-height: 30px;
-      color: #E9D7FE;
-      padding: 20px 0 32px;
-   }
-   &__form{
-      width: 360px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-      &-input{
-         width: 100%;
-         height: 48px;
-         background: #fff;
-         border: 1px solid #fff;
-         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-         border-radius: 8px;
-         padding-left: 14px;
-         font-size: 16px;
-         line-height: 24px;
-         &-name{
-            margin-bottom: 32px;
-         }
-         &-text{
-            line-height: 20px;
-            color: #E9D7FE;
-            padding: 6px 0 16px;
-            text-align: left;
-         }
-      }
-      &-button{
-         font-size: 16px;
-         font-weight: 600;
-         line-height: 24px;
-         width: 100%;
-         height: 48px;
-         background: #1513AD;
-         border: 1px solid #1513AD;
-         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-         border-radius: 8px;
-         &:hover{
-            background-color: #fff;
-            color: #1719DD;
-            border: 1px solid #fff;
-         }
-      }
-   }
-   &__img{
-      position: absolute;
-      left: 0px;
-      top: -110px;
-      mix-blend-mode: screen;
-      opacity: 0.59;
-   }
-}
-@media (max-width: 480px) {
-   .registration{
-      padding: 60px 0;
-      &__form{
-         width: 100%;
-      }
-   }
-}
-// ========= Section Footer =========
-// .footer{
-//    background: #1C1C30;
-//    padding: 64px 0 48px;
-//    &__main{
-//       display: flex;
-//       justify-content: space-between;
-//       padding-bottom: 100px;
-//       &-column{
-//          width: 280px;
-//          &-title{
-//             font-weight: 600;
-//             line-height: 20px;
-//             color: #D0D5DD;
-//             margin-bottom: 4px;
-//          }
-//          &-item{
-//             font-size: 16px;
-//             font-weight: 600;
-//             line-height: 24px;
-//             color: #EAECF0;
-//             padding-top: 12px;
-//             &:hover{
-//                color:#b2b8c2;
-//             }
-//          }
-//       }
-//    }
-//    &__down{
-//       display: flex;
-//       justify-content: space-between;
-//       padding-top: 37px;
-//       border-top: 1px solid #475467;
-//       &-text{
-//          font-size: 16px;
-//          line-height: 24px;
-//          color: #D0D5DD;
-//       }
+//    &__img{
+//       position: absolute;
+//       left: 0px;
+//       top: -110px;
+//       mix-blend-mode: screen;
+//       opacity: 0.59;
 //    }
 // }
-// @media (max-width: 970px) {
-//    .footer{
-//       &__main{
-//          flex-wrap: wrap;
-//          justify-content: center;
-//          gap: 35px;
-//          padding-bottom: 40px;
-//       }
-//    }
-// }
-// @media (max-width: 624px) {
-//    .footer{
-//       &__main{
-//          &-column{
-//             text-align: center;
-//             &-item{
-//                line-height: 20px;
-//             }
-//          }
-//       }
-//       &__down{
-//          flex-wrap: wrap;
-//          justify-content: center;
-//          gap: 15px;
-//          &-text{
-//             font-size: 12px;
-//          }
+// @media (max-width: 480px) {
+//    .registration{
+//       padding: 60px 0;
+//       &__form{
+//          width: 100%;
 //       }
 //    }
 // }
