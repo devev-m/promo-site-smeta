@@ -101,3 +101,17 @@
       } 
    }
 }
+@media (max-width: 390px) {
+.prices__card{
+      width: 320px;
+      &-price{
+         font-size: 40px;
+      }
+      &-footer{
+         padding: 20px;
+         &-list{
+            line-height: 20px;
+         }
+      }
+   }
+}

@@ -3,67 +3,9 @@
    <h2 class="prices__title">Тарифы помогут сэкономить</h2>
    <p class="prices__info">У нас возможности есть для каждого</p>
    <div class="prices__cards">
-     <div class="prices__card prices__card_1">
-       <div class="prices__card-header">
-         <div class="prices__card-title-wrapper">
-           <p class="prices__card-title">Базовый тариф</p>
-           <span class="prices__card-title-span">Бестселлер</span>
-         </div>
-         <h4 class="prices__card-price">1 100 ₽</h4>
-         <span class="prices__card-price-span">1 день</span>
-         <p class="prices__card-info">Программа с ТСН МГЭ на 1 день</p>
-         <!-- <ui-button [text]="'Приобрести тариф'" [backgroundColor]="'#1719DD'" class="prices__card-button prices__card-button_1"></ui-button> -->
-         <button class="prices__card-button prices__card-button_1">Приобрести тариф</button>
-         <button class="prices__card-button prices__card-button_2">Подробнее</button>
-       </div>
-       <div class="prices__card-footer">
-         <p class="prices__card-footer-title">Возможности</p>
-         <ul class="prices__card-footer-list">
-           <li class="prices__card-footer-item">База ТСН МГЭ <span>(56 дополнение)</span></li>
-           <li class="prices__card-footer-item">Индексы ТСН МГЭ <span>(2019 год)</span></li>
-           <li class="prices__card-footer-item">Индексы ТСН МГЭ, Глава 13 <span>(2017 год)</span></li>
-         </ul>
-       </div>
-     </div>
-     <div class="prices__card prices__card_2">
-       <div class="prices__card-header">
-         <div class="prices__card-title-wrapper">
-           <p class="prices__card-title">Бизнес тариф</p>
-         </div>
-         <h4 class="prices__card-price">3 300 ₽</h4>
-         <span class="prices__card-price-span">30 дней</span>
-         <p class="prices__card-info">Программа с ТСН МГЭ на 30 дней</p>
-         <button class="prices__card-button prices__card-button_1">Приобрести тариф</button>
-         <button class="prices__card-button prices__card-button_2">Подробнее</button>
-       </div>
-       <div class="prices__card-footer">
-         <p class="prices__card-footer-title">Возможности</p>
-         <ul class="prices__card-footer-list">
-           <li class="prices__card-footer-item">База ТСН МГЭ <span>(56 дополнение)</span></li>
-           <li class="prices__card-footer-item">Индексы ТСН МГЭ <span>(2019 год)</span></li>
-           <li class="prices__card-footer-item">Индексы ТСН МГЭ, Глава 13 <span>(2017 год)</span></li>
-         </ul>
-       </div>
-     </div>
-     <div class="prices__card prices__card_3">
-       <div class="prices__card-header">
-         <div class="prices__card-title-wrapper">
-           <p class="prices__card-title">Энтерпрайз тариф</p>
-         </div>
-         <h4 class="prices__card-price">9 900 ₽</h4>
-         <span class="prices__card-price-span">90 дней</span>
-         <p class="prices__card-info">Программа с ТСН МГЭ на 90 дней</p>
-         <button class="prices__card-button prices__card-button_1">Приобрести тариф</button>
-         <button class="prices__card-button prices__card-button_2">Подробнее</button>
-       </div>
-       <div class="prices__card-footer">
-         <p class="prices__card-footer-title">Возможности</p>
-         <ul class="prices__card-footer-list">
-           <li class="prices__card-footer-item">База ТСН МГЭ <span>(56 дополнение)</span></li>
-           <li class="prices__card-footer-item">Индексы ТСН МГЭ <span>(2019 год)</span></li>
-           <li class="prices__card-footer-item">Индексы ТСН МГЭ, Глава 13 <span>(2017 год)</span></li>
-         </ul>
-       </div>
-     </div>
+     <!-- <ui-button [text]="'Приобрести тариф'" [backgroundColor]="'#1719DD'" class="prices__card-button prices__card-button_1"></ui-button> -->
+     <ui-card [textTariff]="'Базовый тариф'" [textBestseller]="'Бестселлер'" [textPrice]=1100 [textDays]="'1 день'"></ui-card>
+     <ui-card [textTariff]="'Бизнес тариф'" [textPrice]=3300 [textDays]="'30 дней'"></ui-card>
+     <ui-card [textTariff]="'Энтерпрайз тариф'" [textPrice]=9900 [textDays]="'90 дней'"></ui-card>
    </div>
  </section>

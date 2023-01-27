@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { TryComponent } from './sections/main/try/try.component';
 import { FeedbackComponent } from './sections/main/feedback/feedback.component';
 import { RegistrationComponent } from './sections/main/registration/registration.component';
 import { UiFormComponent } from './ui-components/ui-form/ui-form.component';
+import { UiCardComponent } from './ui-components/ui-card/ui-card.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +26,12 @@ import { UiFormComponent } from './ui-components/ui-form/ui-form.component';
     TryComponent,
     FeedbackComponent,
     RegistrationComponent,
-    UiFormComponent
+    UiFormComponent,
+    UiCardComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     UiButtonModule,
